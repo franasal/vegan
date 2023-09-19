@@ -8,6 +8,17 @@ from dateutil.relativedelta import relativedelta
 
 st.set_page_config(page_title="Live Vegan Impact", page_icon="Iconveg.png")
 
+# hide some stuff
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 
 seconds_in_a_day = 24 * 60 * 60
 
