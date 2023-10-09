@@ -1,0 +1,169 @@
+{
+  "sanctuaries": [
+    {
+      "name": "Kuhtopia",
+      "size": "Medium",
+      "location": {
+        "town": "Prenzlau",
+        "closest_big_city": "Berlin"
+      },
+      "number_of_animals": 120,
+      "animals": [
+        {
+          "name": "Buddy",
+          "age": 8,
+          "health": "Good",
+          "species": "Cow",
+          "current_budget": 80
+        },
+        {
+          "name": "Luna",
+          "age": 6,
+          "health": "Excellent",
+          "species": "Pig",
+          "current_budget": 60
+        },
+        {
+          "name": "Mia",
+          "age": 12,
+          "health": "Fair",
+          "species": "Chicken",
+          "current_budget": 120
+        }
+      ],
+      "emergency_budget": 500
+    },
+    {
+      "name": "Wildlife Acres Sanctuary",
+      "size": "Small",
+      "location": {
+        "town": "Eching",
+        "closest_big_city": "Munich"
+      },
+      "number_of_animals": 30,
+      "animals": [
+        {
+          "name": "Rocky",
+          "age": 5,
+          "health": "Excellent",
+          "species": "Horse",
+          "current_budget": 100
+        },
+        {
+          "name": "Sunny",
+          "age": 3,
+          "health": "Good",
+          "species": "Sheep",
+          "current_budget": 40
+        }
+      ],
+      "emergency_budget": 300
+    },
+    {
+      "name": "Heavenly Haven Refuge",
+      "size": "Large",
+      "location": {
+        "town": "Bad Oldesloe",
+        "closest_big_city": "Hamburg"
+      },
+      "number_of_animals": 300,
+      "animals": [
+        {
+          "name": "Lucky",
+          "age": 10,
+          "health": "Fair",
+          "species": "Goat",
+          "current_budget": 140
+        },
+        {
+          "name": "Ruby",
+          "age": 4,
+          "health": "Excellent",
+          "species": "Turkey",
+          "current_budget": 75
+        },
+        {
+          "name": "Oliver",
+          "age": 7,
+          "health": "Good",
+          "species": "Duck",
+          "current_budget": 60
+        }
+      ],
+      "emergency_budget": 700
+    },
+    {
+      "name": "Peaceful Pastures Sanctuary",
+      "size": "Medium",
+      "location": {
+        "town": "Kaarst",
+        "closest_big_city": "Cologne"
+      },
+      "number_of_animals": 80,
+      "animals": [
+        {
+          "name": "Daisy",
+          "age": 9,
+          "health": "Good",
+          "species": "Sheep",
+          "current_budget": 70
+        },
+        {
+          "name": "Max",
+          "age": 6,
+          "health": "Excellent",
+          "species": "Chicken",
+          "current_budget": 25
+        }
+      ],
+      "emergency_budget": 400
+    }
+  ],
+  "animal_cost": [
+    {
+      "species": "chicken",
+      "monthly_cost": 20,
+      "life_expectancy_months": 60
+    },
+    {
+      "species": "cow",
+      "monthly_cost": 160,
+      "life_expectancy_months": 240
+    },
+    {
+      "species": "pig",
+      "monthly_cost": 100,
+      "life_expectancy_months": 120
+    },
+    {
+      "species": "turkey",
+      "monthly_cost": 25,
+      "life_expectancy_months": 60
+    },
+    {
+      "species": "duck",
+      "monthly_cost": 30,
+      "life_expectancy_months": 120
+    },
+    {
+      "species": "sheep",
+      "monthly_cost": 80,
+      "life_expectancy_months": 120
+    },
+    {
+      "species": "goat",
+      "monthly_cost": 70,
+      "life_expectancy_months": 180
+    },
+    {
+      "species": "horse",
+      "monthly_cost": 200,
+      "life_expectancy_months": 360
+    },
+    {
+      "species": "rabbit",
+      "monthly_cost": 10,
+      "life_expectancy_months": 60
+    }
+  ]
+}
