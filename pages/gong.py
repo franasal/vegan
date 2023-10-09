@@ -1,6 +1,7 @@
 import streamlit as st
 import time
-from playsound import playsound
+# from playsound import playsound
+import base64
 
 
 
@@ -18,6 +19,21 @@ st.markdown("""
 
 # Example usage:
 sanctuary_name = "Kuhtopia"
+
+
+def autoplay_audio(file_path: str):
+    with open(file_path, "rb") as f:
+        data = f.read()
+        b64 = base64.b64encode(data).decode()
+        md = f"""
+            <audio controls autoplay="true">
+            <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
+            </audio>
+            """
+        st.markdown(
+            md,
+            unsafe_allow_html=True,
+        )
 
 
 def form_fck(total_time):
@@ -46,16 +62,16 @@ def form_fck(total_time):
             alarm1_perc =  int((alarm1*100)/total_time)
 
             test_time_fast = 1
-            with st.spinner():
+            with st.spinner("meditating..."):
 
                 for percent_complete in range(100):
 
                     time.sleep(sleep_time/test_time_fast)
                     if percent_complete == alarm1_perc:
-                        playsound('shovel-gong.mp3')
+                        autoplay_audio('shovel-gong.mp3')
                         st.success("alarm 1")
                     elif percent_complete == 99:
-                        playsound('gong1-94016.mp3')
+                        autoplay_audio('gong1-94016.mp3')
                         st.success("alarm 2")
                     my_bar.progress(percent_complete + 1)
 
