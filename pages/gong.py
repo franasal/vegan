@@ -26,9 +26,7 @@ def autoplay_audio(file_path: str):
         data = f.read()
         b64 = base64.b64encode(data).decode()
         md = f"""
-            <audio controls autoplay="true">
-            <source src="data:audio/mp3;base64,{b64}" type="audio/mp3">
-            </audio>
+            <audio autoplay="true"  src="data:audio/mp3;base64,{b64}" type="audio/mp3">
             """
         st.markdown(
             md,
